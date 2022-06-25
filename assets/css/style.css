@@ -1,0 +1,25 @@
+.card-img {
+    display: flex;
+}
+
+.card-img img:first-of-type {
+    opacity: 1;
+    border-radius: 3px;
+    transition: .7s;
+}
+
+.card-img img:last-of-type {
+    position: relative;
+    left: -100%;
+    border-radius: 3px;
+    opacity: 0;
+    transition: .7s;
+}
+
+.card-img:hover img:first-of-type{
+    opacity: 0;
+}
+
+.card-img:hover img:last-of-type {
+    opacity: 1;
+}
